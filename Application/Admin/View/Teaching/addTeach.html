@@ -1,0 +1,90 @@
+<extend name="Public/base" />
+
+<block name="style">
+    <style type="text/css">
+        .main-title{
+            margin-bottom: 10px;
+        }
+        #content{
+            width: 95%;
+            height: 400px;
+            margin-bottom: 20px;
+            background: white;
+        }
+        #title{
+            width: 95%;
+            height: 50px;
+        }
+        #ipt{
+            width: 500px;
+            height: 25px;
+            border-radius: 5px;
+            border: 2px solid #D4D4D4;
+        }
+
+    </style>
+</block>
+
+<block name="body">
+    <div class="main-title">
+        <h2>教学教程新增</h2>
+    </div>
+    <div id="title"><h3 id="h" style="width:90px;float: left;">章节标题：</h3>
+        <input id="ipt" type="text" value="{$list.guide_title}"></div>
+    <div id="content">
+        <textarea id="myEditor" name="news_content" style="width:100%;min-height:80%;float:left;"></textarea>
+    </div>
+
+    <button class="btn" url="{:U()}">提交</button>
+
+</block>
+
+<block name="script">
+    <script type="text/javascript">
+        highlight_subnav("{:U('Teaching/addTeach')}");
+
+        var ue = UE.getEditor("myEditor",{
+            toolbars: [['source', '|', 'undo', 'redo', '|','bold', 'italic', 'underline', 'fontborder', 'strikethrough',
+                'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'pasteplain', '|', 'forecolor',
+                'backcolor', 'insertorderedlist', 'insertunorderedlist', '|', 'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
+                'indent', '|', 'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|', 'justifyleft', 'justifycenter', 'justifyright',
+                'justifyjustify', '|', 'touppercase', 'tolowercase', '|','link', 'unlink','|','insertimage', 'emotion', 'attachment',
+                'insertcode', 'pagebreak', 'background', '|', 'spechars', 'snapscreen', '|','inserttable', 'deletetable',
+                'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright',
+                'mergedown', 'splittocells', 'splittorows', 'splittocols', '|', 'searchreplace']],
+            autoHeightEnabled: true,
+            autoFloatEnabled: true
+
+        });
+
+        //加内容改变事件监听
+        ue.addListener('contentChange',function(e){
+            $(".btn").attr("disabled",false);
+        });
+        $(".btn").click(function(){
+            var title = $("#ipt").val();
+            $("#wore").remove();
+            if (/<\s*(\S+)(\s[^>]*)?>[\s\S]*<\s*\/\1\s*>/.test(title)==true || title=="") {
+                var error = "<span id='wore' style='color:red;font-size:16px;margin-left:20px;'>请确认输入信息</span>";
+                $("#ipt").after(error);
+                return;
+            };
+
+            if (title.length>30) {
+                var error = "<span id='wore' style='color:red;font-size:16px;margin-left:20px;'>标题过长，请保持在30个汉字内</span>";
+                $("#ipt").after(error);
+                return;
+            };
+            var url = $(this).attr("url");
+            var editor = ue.getContent();
+            var seat = $(this).attr("uid");
+
+            $.post(url,{title:title,editor:editor,seat:seat},function(data){
+                window.location.href = "__ROOT__/index.php/Admin/Teaching/index.html";
+            });
+        })
+
+
+    </script>
+
+</block>

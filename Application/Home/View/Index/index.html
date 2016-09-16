@@ -1,0 +1,119 @@
+<extend name="Public/base" />
+<block name="style">
+    <link rel="stylesheet" type="text/css" href="__CSS__/index.css">
+</block>
+<block name="body">
+    <div class="banner">
+        <section class="box">
+            <ul class="texts">
+                <p>我在我的世界里辛苦劳作</p>
+                <p>你在你的世界里快乐玩耍</p>
+                <p>你笑我不懂得享受，我笑你没有远大的理想</p>
+            </ul>
+            <div class="avatar">
+                <a href="{:U('About/about')}">
+                    <span>Chunyu.Sun</span>
+                </a>
+            </div>
+        </section>
+    </div>
+    <article>
+        <h2 class="title_tj">
+            <p> 文章 <span>推荐</span> </p>
+        </h2>
+        <div class="bloglist left">
+
+            <volist name="list" id="vo">
+                <h3>
+                    <a >{$vo.title}</a>
+                </h3>
+                <figure>
+                    <a>
+                        <img src="__IMG__/title1.jpg" data-original="__IMG__/title1.jpg" data-bd-imgshare-binded="1" style="display: block">
+                    </a>
+                </figure>
+                <ul>
+                    <p>  {$vo.content}</p>
+                    <a href="{:U('Read/read')}?id={$vo.id}" target="_blank" class="readmore">阅读全文>></a>
+                </ul>
+                <p class="dateview">
+                    <span>{$vo.create_time}</span>
+                <span>
+                    <a href="{:U('Read/read')}?id={$vo.id}">评论：</a>
+                    <span class="ds-thread-count replies">{$vo.com_count}</span>
+                </span>
+                    <span>作者：{$vo.author}</span>
+                <span>
+                    个人博客：
+                    【“
+                    <a>{$vo.cover}</a>
+                    ”】
+                </span>
+                </p>
+            </volist>
+
+        </div>
+        <aside class="right">
+            <div class="weather">
+                <iframe width="250" scrolling="no" height="60" frameborder="0" allowtransparency="true" src="http://i.tianqi.com/index.php?c=code&amp;id=12&amp;icon=1&amp;num=1"></iframe>
+            </div>
+            <div class="news">
+                <h3 class="ph">
+                    <p>
+                        站内
+                        <span class="sousuo">搜索</span>
+                    </p>
+                </h3>
+                <ul>
+                    <li  class="getsousuo">></li>
+                    <!--<a>{$vo.title}</a>-->
+                </ul>
+                <input id="sousuo" type="text" style="margin: 20px auto" placeholder="输入搜索关键字">
+                <input type="submit" class="bdcs-search-form-submit" id="bdcs-search-form-submit" value="搜索">
+                <input type="hidden" id="url" value="{:U()}" />
+                <div style="display: block" id="putup">
+                    <!--{$vo.mytitle};-->
+                </div>
+
+            </div>
+            <h3 class="links">
+                <p>
+                    友情
+                    <span>链接</span>
+                </p>
+            </h3>
+            <ul class="website">
+                <li><a target="_blank" href="http://http://scy.zhengjunfei.cn/index.php/Index/index.html">个人博客</a></li>
+                <li><a target="_blank" href="http://http://scy.zhengjunfei.cn/index.php/Share/share.html">分享社</a></li>
+                <li><a target="_blank" href="http://2993120339@qq.com">邮箱</a></li>
+            </ul>
+        </aside>
+    </article>
+
+</block>
+<block name="script">
+    <script>
+//     $("#bdcs-search-form-submit").click(function(){
+//         var sousuo =  $("#sousuo").val();
+//         var url = $("#url").attr("value");
+//         var aa = url+"/bb/"+sousuo ;
+//        window.location.href=     aa;
+//     })
+
+
+    </script>
+
+    <script src="__JS__/slider.js"></script>
+    <script>
+      $("readmore").click(function(){
+          var thecontent =$(this).find("p").text();
+          $("putup").find("p").text("");
+      })
+
+      $("sousuo").onClick(function(){
+          var title = $(this).find("$vo.title").text();
+          $("getsousuo").find("$vo.title").text("");
+
+      })
+    </script>
+</block>

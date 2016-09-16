@@ -1,0 +1,80 @@
+<extend name="Public/base" />
+<block name="style">
+    <link rel="stylesheet" type="text/css" href="__CSS__/photo.css">
+    <!--<link rel="stylesheet" type="text/css" href="__CSS__/pingpu.css">-->
+</block>
+<block name="body">
+    <div>
+    <volist name="list" id="vo">
+       <div style="margin: 20px 10% 20px 10%;font-size: 16px;text-align: center;line-height: 25px"> {$vo.content}</div>
+    </volist>
+    </div>
+    <div style="margin: 20px 10% 20px 10%; ">
+
+        <div class="comment_view">
+            <?php
+                for ($i=0; $i < count($data); $i++) {
+                    echo '<hr style="margin-top: 5px;margin-bottom: 5px;"><img class="head_img" align="left" src="__IMG__/head.png" alt="head-portrait"><div class="contents">';
+            echo '<span class="account">姓名:'.$data[$i]['id'].'</span><br>';
+            echo '<span class="content">内容:'.$data[$i]['content'].'</span><br>';
+            echo '<span class="date">时间:'.$data[$i]['create_time'].'</span><span class="reply_a" onclick="reply('.$data[$i]['publish_u_id'].','.$data[$i]['id'].','.$data[$i]['id'].')" style="margin-left: 10px;color: black;">回复</span><br></div>';
+            for ($j=0; $j < count($value[$i]); $j++) {
+            echo '<div class="reply"><hr style="margin-top: 5px;margin-bottom: 5px;"><img class="head_img_small" align="left" src="__IMG__/head.png" alt="head-portrait"><div class="contents">';
+            echo '<span class="account">姓名:'.$value[$i][$j]['id'].'</span><br>';
+            echo '<span class="content">内容:'.$value[$i][$j]['content'].'</span><br>';
+            echo '<span class="date" style="margin-left: 40px;">时间:'.$value[$i][$j]['create_time'].'</span><span class="reply_a" onclick="reply('.$value[$i][$j]['publish_u_id'].','.$value[$i][$j]['root_id'].','.$value[$i][$j]['id'].')" style="margin-left: 10px;color: black;">回复</span><br></div></div>';
+            }
+            }
+            ?>
+        </div>
+        <!--<h3>添加评论</h3>-->
+        <div class="clear_float"><hr style="margin-top: 5px;margin-bottom: 10px;"></div>
+        <div class="comment_area">
+            <img class="head_img" align="left" src="__IMG__/head.png" alt="head-portrait">
+            <div class="comment">
+                <a href="#reply"></a>
+                <input type="hidden" class="reply_u_id" value="">
+                <input type="hidden" class="root_id" value="">
+                <div class="Input_Box">
+                    <textarea class="Input_text"></textarea>
+                    <div class="faceDiv"></div>
+                    <div class="Input_Foot"><a class="imgBtn" href="javascript:void(0);"></a><a class="postBtn">确定</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</block>
+<block name="script">
+    <script src="__JS__/slider.js"></script>
+    <!--<script src="__JS__/gill.js"></script>-->
+    <!--<script src="__JS__/photo.js"></script>-->
+    <script>
+        $('.postBtn').click(function() {
+            if ($('.Input_text').val().length == 0) {
+                alert("回复内容不能为空！");
+            } else {
+                $.post("{:U('Message/publish_message')}",{message:$('.Input_text').val(),reply_u_id:$('.reply_u_id').val(),root_id:$('.root_id').val()},function(data) {
+                    if (data == "true") {
+                        location.reload(true);
+                        location.hash="#";
+                        alert("发表评论成功！");
+                    } else if(data == "logout") {
+                        alert("请先完成登录操作，然后返回发表留言。");
+                    } else {
+                        alert("发表评论失败!请稍后再试……");
+                    }
+
+                })
+            }
+        })
+        function reply(reply_u_id,root_id,account) {
+            $('.reply_u_id').val(reply_u_id);
+            $('.root_id').val(root_id);
+            $('.Input_text').val("回复 "+account+":");
+            //跳转锚
+            location.hash="#reply";
+            $('.Input_text').focus();
+        }
+    </script>
+</block>

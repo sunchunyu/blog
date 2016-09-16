@@ -1,0 +1,72 @@
+<extend name="Public/base"/>
+<block name="style">
+    <style>
+        #p{
+            font-size:16px;
+        }
+        #content{
+            width: 100%;
+            min-height: 450px;
+            margin: 10px auto;
+<<<<<<< HEAD
+            float: left;
+            overflow: hidden;
+        }
+        .p{
+            margin-bottom: 5px;
+            height: 20px;
+            overflow: hidden;
+=======
+        }
+        .p{
+            margin-bottom: 5px;
+>>>>>>> origin/chentianyu
+        }
+        #info-img{
+            width: 200px;
+            height: 170px;
+            background: red;
+            float: left;
+<<<<<<< HEAD
+            margin-right: 100px;
+        }
+        #info-right{
+            width: 72%;
+            float: left;
+        }
+=======
+            margin-right: 120px;
+        }
+
+>>>>>>> origin/chentianyu
+    </style>
+</block>
+<block name="body">
+    <div id="main-title">
+        <div class="main-title">
+            <h2>乐谱详细信息</h2>
+        </div>
+        <div id="info-img"></div>
+        <div id="info-right">
+            <p class="p"><span style="width: 80px;float: left;">乐谱名称：</span>{$list.m_name}</p>
+            <p class="p"><span style="width: 80px;float: left;">作曲者：</span>{$list.m_author}</p>
+            <p class="p"><span style="width: 80px;float: left;">演奏者：</span>{$list.m_player}</p>
+            <p class="p"><span style="width: 80px;float: left;">类别：</span>{$list.ca_type}</p>
+            <p class="p"><span style="width: 80px;float: left;">点击量：</span>{$list.m_viewer_count}</p>
+            <p class="p"><span style="width: 80px;float: left;">支持量：</span>{$list.m_good_count}</p>
+            <p class="p"><span style="width: 80px;float: left;">乐谱简介：</span>{$list.m_intro}</p>
+        </div>
+        <div id="content">
+            <p class="p"><span style="width: 80px;float: left;">乐谱名称：</span></p>
+            {$list.m_score}
+        </div>
+    </div>
+</block>
+<block name="script">
+    <script type="text/javascript">
+        //导航高亮
+        highlight_subnav("{:U('Spectrum/music')}");
+
+
+    </script>
+</block>

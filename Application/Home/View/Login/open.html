@@ -1,0 +1,40 @@
+<extend name="Public/base" />
+<block name="style">
+    <link rel="stylesheet" type="text/css" href="__CSS__/login.css">
+</block>
+<block name="body">
+	<div class="wrapper">
+		<div class="container">
+			<h1>Welcome to Scy</h1>
+			<form class="form">
+				<input type="text" id="account" placeholder="用户名">
+				<input type="password" id="password" placeholder="密码">
+				<button type="button" id="register-button">注册</button>
+				<button type="button" id="login-submit">登录</button>
+			</form>
+		</div>
+	</div>
+</block>
+<block name="script">
+    <script src="__JS__/slider.js"></script>
+    <script src="__JS__/login.js"></script>
+    <script>
+    	$('#login-submit').click(function(){
+    		if ($('#account').val().length == 0 || $('#password').val().length == 0) {
+    			alert("账号和密码不能为空！");
+    		} else {
+    			$.post("{:U('Login/login')}",{account:$('#account').val(),password:$('#password').val()},function(data) {
+
+    				if (data == "true") {
+    					//跳转
+    					window.location.href="{:U('Index/index')}";
+    				} else if (data == "error") {
+    					alert("登录失败! 密码错误……");
+    				} else {
+                        alert("登录失败！账号不存在……");
+                    }
+    			})
+    		}
+    	})
+    </script>
+</block>

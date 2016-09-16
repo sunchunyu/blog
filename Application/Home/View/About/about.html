@@ -1,0 +1,42 @@
+<extend name="Public/base" />
+<block name="style">
+    <link rel="stylesheet" type="text/css" href="__CSS__/about.css">
+</block>
+<block name="body">
+<article class="aboutcon">
+    <h1 class="t_nav">
+        <span>学如春起之苗，不见其长，日有所增</span>
+        <a href="{:U('Index/index')}" class="n1">网站首页</a>
+        <a href="{:U('About/about')}" class="n2">关于我</a>
+    </h1>
+<!--{$list[0]["id"]}-->
+    <!--<?php var_dump( $list)?>-->
+    <div class="about left">
+        <h2>关于我</h2>
+        <ul>
+            <p>女，前端开发工程师</p>
+            <p>专注于前端开发</p>
+            <p>一个爱笑的傻女孩</p>
+        </ul>
+        <h2>关于我的大学</h2>
+        <p>河南科技学院</p>
+        <p>信息工程学院</p>
+        <p>计算机科学与技术</p>
+        <p>计科131班</p>
+    </div>
+    <aside class="right">
+        <div class="about_c">
+            <p>扣扣：<span>2993120339</span></p>
+            <p>姓名：孙春雨</p>
+            <p>生日：1994年6月</p>
+            <p>籍贯：河南省周口市</p>
+            <p>现居：河南省新乡市</p>
+            <p>职业：前端开发工程师</p>
+        </div>
+    </aside>
+</article>
+<block name="script">
+    <script src="__JS__/slider.js"></script>
+</block>
+
+</block>

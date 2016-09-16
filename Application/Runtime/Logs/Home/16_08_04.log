@@ -1,0 +1,869 @@
+[ 2016-08-04T15:35:49+08:00 ] ::1 /scy/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.038310s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005929s ]
+
+[ 2016-08-04T15:35:49+08:00 ] ::1 /scy/index.php/Login/open.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001878s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002653s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000414s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001030s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.155131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.155687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001949s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002341s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003846s ]
+
+[ 2016-08-04T15:36:05+08:00 ] ::1 /scy/index.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.122700s ]
+SQL: SELECT `id`,`password` FROM `user` WHERE `account` = '小雨' LIMIT 1   [ RunTime:0.038602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002118s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002462s ]
+
+[ 2016-08-04T15:36:05+08:00 ] ::1 /scy/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001175s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001161s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.031840s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.013078s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.012983s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=1 ) LIMIT 1   [ RunTime:0.029568s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=2 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=3 ) LIMIT 1   [ RunTime:0.000270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=4 ) LIMIT 1   [ RunTime:0.000510s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=5 ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=6 ) LIMIT 1   [ RunTime:0.000347s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=7 ) LIMIT 1   [ RunTime:0.000331s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=8 ) LIMIT 1   [ RunTime:0.000312s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8] Undefined index: mytitle D:\wamp\www\scy\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000683s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2016-08-04T15:36:10+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.029787s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.017736s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 20 ORDER BY create_time  [ RunTime:0.000482s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000409s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 17 ORDER BY create_time  [ RunTime:0.000748s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000467s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000400s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000294s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000312s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000338s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000309s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001464s ]
+
+[ 2016-08-04T15:45:58+08:00 ] ::1 /scy/index.php/Message/publish_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004055s ]
+SQL: INSERT INTO `message` (`content`,`publish_u_id`,`reply_u_id`,`root_id`) VALUES ('回复 15:<script>alert(\'test\');</script>',11,10,1) [ RunTime:0.156109s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000945s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001085s ]
+
+[ 2016-08-04T15:46:01+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004188s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000427s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 20 ORDER BY create_time  [ RunTime:0.000299s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000307s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 17 ORDER BY create_time  [ RunTime:0.000381s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000341s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000407s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000642s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000304s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000370s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000298s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000289s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2016-08-04T15:47:50+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004823s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000572s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 20 ORDER BY create_time  [ RunTime:0.000336s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000298s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 17 ORDER BY create_time  [ RunTime:0.000323s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000375s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000826s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000322s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000329s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000343s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000316s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000292s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000906s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2016-08-04T15:47:56+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000927s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.003927s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000469s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 20 ORDER BY create_time  [ RunTime:0.000533s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000563s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 17 ORDER BY create_time  [ RunTime:0.000468s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000338s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000305s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000307s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000307s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000347s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000298s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000314s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.024855s ]
+
+[ 2016-08-04T15:48:30+08:00 ] ::1 /scy/index.php/Message/publish_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001104s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004741s ]
+SQL: INSERT INTO `message` (`content`,`publish_u_id`,`reply_u_id`,`root_id`) VALUES ('回复 23:<script>alert(\'test\');</script>',11,11,1) [ RunTime:0.127244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001504s ]
+
+[ 2016-08-04T15:48:32+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004169s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000439s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 20 ORDER BY create_time  [ RunTime:0.000325s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000297s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 17 ORDER BY create_time  [ RunTime:0.000305s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000297s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000335s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000337s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000311s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000355s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000336s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000363s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2016-08-04T15:56:35+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004609s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000450s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 20 ORDER BY create_time  [ RunTime:0.000331s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000321s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 17 ORDER BY create_time  [ RunTime:0.000708s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000345s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000304s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000542s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000372s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000316s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000287s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000307s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000321s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000642s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001369s ]
+
+[ 2016-08-04T15:58:16+08:00 ] ::1 /scy/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000847s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.079865s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.001484s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.004443s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=1 ) LIMIT 1   [ RunTime:0.000438s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=2 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=3 ) LIMIT 1   [ RunTime:0.000395s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=4 ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=5 ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=6 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=7 ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=8 ) LIMIT 1   [ RunTime:0.000257s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Undefined index: mytitle D:\wamp\www\scy\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000693s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001300s ]
+
+[ 2016-08-04T15:58:21+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.005192s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000445s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 20 ORDER BY create_time  [ RunTime:0.000308s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000318s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 17 ORDER BY create_time  [ RunTime:0.000342s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000311s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000329s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000330s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000307s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000328s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000295s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000335s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2016-08-04T15:58:29+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004346s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000679s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 20 ORDER BY create_time  [ RunTime:0.000401s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000311s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 17 ORDER BY create_time  [ RunTime:0.000313s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000292s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000357s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.001385s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000397s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000417s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000383s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2016-08-04T15:58:33+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000618s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.035204s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.001086s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 20 ORDER BY create_time  [ RunTime:0.000405s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000316s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 17 ORDER BY create_time  [ RunTime:0.000315s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000322s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000376s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000358s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000362s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000358s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000463s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000328s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000730s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2016-08-04T16:02:14+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000613s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004844s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000535s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 20 ORDER BY create_time  [ RunTime:0.000406s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000287s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 17 ORDER BY create_time  [ RunTime:0.000334s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000604s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000354s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000309s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000316s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000323s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000280s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000378s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013547s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+
+[ 2016-08-04T16:39:28+08:00 ] ::1 /scy/index.php/Message/publish_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000670s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.119685s ]
+SQL: INSERT INTO `message` (`content`,`publish_u_id`,`reply_u_id`,`root_id`) VALUES ('回复 23:<script>alert(\'test\');</script>',11,11,1) [ RunTime:0.078846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002163s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002523s ]
+
+[ 2016-08-04T16:39:31+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000823s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.003921s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000658s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 20 ORDER BY create_time  [ RunTime:0.000522s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000373s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 17 ORDER BY create_time  [ RunTime:0.000396s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000358s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000341s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000531s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000371s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000338s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000327s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000972s ]
+
+[ 2016-08-04T16:40:33+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000121s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001214s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004968s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000394s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000301s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000308s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000314s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000307s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000306s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000362s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000369s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000914s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001120s ]
+
+[ 2016-08-04T16:40:43+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000810s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000963s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004907s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000605s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000360s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000306s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000309s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000340s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000317s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000337s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000299s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000327s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000802s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001009s ]
+
+[ 2016-08-04T17:07:50+08:00 ] ::1 /scy/index.php/Message/publish_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.062560s ]
+SQL: INSERT INTO `message` (`content`,`publish_u_id`,`reply_u_id`,`root_id`) VALUES ('<script>alert(\'test\');</script>',11,null,null) [ RunTime:0.084579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001131s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001293s ]
+
+[ 2016-08-04T17:07:52+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004300s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000424s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 26 ORDER BY create_time  [ RunTime:0.000316s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000361s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000418s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000372s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000693s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000337s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000336s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000300s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000332s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000298s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000455s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000903s ]
+
+[ 2016-08-04T17:08:30+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.005948s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000448s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000376s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000323s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000305s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000297s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000367s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000565s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000413s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000368s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000506s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001008s ]
+
+[ 2016-08-04T20:11:08+08:00 ] ::1 /scy/index.php/Message/publish_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000170s ]
+INFO: [ app_init ] --END-- [ RunTime:0.039606s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012061s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.232506s ]
+SQL: INSERT INTO `message` (`content`,`publish_u_id`,`reply_u_id`,`root_id`) VALUES ('<script>alert(\'test\');</script>',11,null,null) [ RunTime:0.088083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.017787s ]
+
+[ 2016-08-04T20:11:10+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001536s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.006490s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.045055s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 27 ORDER BY create_time  [ RunTime:0.000506s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000409s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000433s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000422s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000404s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000415s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000425s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000414s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000760s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000757s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2016-08-04T20:24:15+08:00 ] ::1 /scy/index.php/Index/index/bb/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.041322s ]
+SQL: SELECT * FROM `article`  [ RunTime:0.001734s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.023557s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=1 ) LIMIT 1   [ RunTime:0.063008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=2 ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=3 ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=4 ) LIMIT 1   [ RunTime:0.000373s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=5 ) LIMIT 1   [ RunTime:0.000600s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=6 ) LIMIT 1   [ RunTime:0.000318s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=7 ) LIMIT 1   [ RunTime:0.000241s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `comment` WHERE ( art_id=8 ) LIMIT 1   [ RunTime:0.000222s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000335s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000592s ]
+NOTIC: [8] Undefined index: mytitle D:\wamp\www\scy\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 94 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
+
+[ 2016-08-04T20:24:18+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.240131s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.028248s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 27 ORDER BY create_time  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000834s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000814s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000815s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000829s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.002551s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.001139s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000908s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000844s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000451s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001995s ]
+
+[ 2016-08-04T20:24:55+08:00 ] ::1 /scy/index.php/Message/publish_message.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004995s ]
+SQL: INSERT INTO `message` (`content`,`publish_u_id`,`reply_u_id`,`root_id`) VALUES ('回复 27:&lt;script&gt;alert(\'test\');&lt;/script&gt;',11,11,27) [ RunTime:0.135580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001298s ]
+
+[ 2016-08-04T20:24:57+08:00 ] ::1 /scy/index.php/Message/gustbook.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000591s ]
+NOTIC: [8] Use of undefined constant URL_COMPAT - assumed 'URL_COMPAT' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 177 行.
+NOTIC: [8] Use of undefined constant URL_REWRITE - assumed 'URL_REWRITE' D:\wamp\www\scy\ThinkPHP\Library\Think\Dispatcher.class.php 第 179 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\scy\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.004304s ]
+SQL: SELECT * FROM `message` WHERE `root_id` IS NULL ORDER BY create_time desc LIMIT 0,10   [ RunTime:0.000407s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 27 ORDER BY create_time  [ RunTime:0.000333s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 19 ORDER BY create_time  [ RunTime:0.000291s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 16 ORDER BY create_time  [ RunTime:0.000323s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 14 ORDER BY create_time  [ RunTime:0.000310s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 13 ORDER BY create_time  [ RunTime:0.000299s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 12 ORDER BY create_time  [ RunTime:0.000283s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 7 ORDER BY create_time  [ RunTime:0.000802s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 4 ORDER BY create_time  [ RunTime:0.000851s ]
+SQL: SELECT * FROM `message` WHERE `root_id` = 1 ORDER BY create_time  [ RunTime:0.000342s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000367s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000902s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+

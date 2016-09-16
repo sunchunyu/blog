@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>孙春雨的博客</title>
+    <script src= "__JS__/jquery-1.11.0.min.js"></script>
+	<block name="style"></block>
+</head>
+<body>
+	<div>
+		<header>
+		    <div id="logo"><a href="#"></a></div>
+		    <nav class="topnav" id="topnav">
+		        <a href="{:U('Index/index')}"><span>首页</span><span class="en">Protal</span></a>
+		        <a href="{:U('About/about')}"><span>关于我</span><span class="en">About</span></a>
+		        <!--<a href="{:U('Photos/photo')}"><span>相册</span><span class="en">Photo</span></a>-->
+		        <a href="{:U('Briefly/doing')}" ><span>碎言碎语</span><span class="en">Doing</span></a>
+		        <a href="{:U('Share/share')}"><span>资源分享</span><span class="en">Share</span></a>
+		        <a href="{:U('Message/gustbook')}"><span>留言版</span><span class="en">Gustbook</span></a>
+		        <a href="{:U('Login/logout')}"><span>{$account_view}</span><span class="en">login/out</span></a>
+
+		    </nav>
+		</header>
+	</div>
+	<block name="body"></block>
+	<footer>
+    	<p>Design by SCY
+    		<a href="#" target="_blank">联系我</a>
+    		<a href="#" target="_blank">计科131</a>
+    	</p>
+    	<div id="tbox">
+     	   <a id="gotop" href="#" title="返回顶部">顶部</a>
+     	   <a id="togbook" href="{:U('Message/gustbook')}" title="给我留言" style="display: block">留言</a>
+    	</div>
+	</footer>
+</body>
+
+<block name="script"></block>
+
+</html>

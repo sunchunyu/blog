@@ -1,0 +1,53 @@
+<extend name="Public/base" />
+
+<block name="style">
+    <link rel="stylesheet" type="text/css" href="__CSS__/index.css">
+    <link rel="stylesheet" type="text/css" href="__CSS__/about.css">
+</block>
+
+<block name="body">
+<article class="blogs">
+    <h1 class="t_nav"><span>好咖啡要和朋友一起品尝，资源也要和同样喜欢它的人一起分享。</span>
+        <a href="/" class="n1">网站首页</a><a href="#" class="n2">资源分享</a></h1>
+    <div class="newblog left">
+        <volist name="list" id="vo">
+            <div>
+        <h2 style="margin: 10px 0 10px 0">{$vo.title}</h2>
+        <p class="dateview"><span>{$vo.create_time}</span><span>文章类型： {$vo.cover}</span></p>
+        <h3>资源简介：</h3>
+        <br />
+        <section class="nlist">
+            <p>{$vo.content}</p>
+            <a  href="https://app.yinxiang.com/Home.action#n=43ba3913-e770-4b44-9879-b67a9a411a35&ses=4&sh=2&sds=5&" target="_blank" class="readmore" style="float: left;margin: 10px 0 10px 0">下载>></a>
+        </section>
+                </div>
+        </volist>
+    </div>
+    <div class="line"></div>
+    </div>
+    <aside class="right">
+        <div class="about_c">
+            <p>1.学会分享才会有进步</p>
+            <p>2.女生必须要独立</p>
+            <p>3.我的青春我做主</p>
+            <p>4.一个爱说爱笑的人很少人会不喜欢</p>
+        </div>
+
+    </aside>
+</article>
+<script src="_JS_/slider.js"></script>
+<script src="_JS_/slider.js"></script>
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?139776525d123c02b34e2af812369ab0";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "slide": { "type": "slide", "bdImg": "1", "bdPos": "right", "bdTop": "100" } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+</block>
+<block name="script">
+    <script src="__JS__/slider.js"></script>
+</block>

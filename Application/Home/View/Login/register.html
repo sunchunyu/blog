@@ -1,0 +1,52 @@
+<extend name="Public/base" />
+<block name="style">
+    <link rel="stylesheet" type="text/css" href="__CSS__/login.css">
+</block>
+<block name="body">
+	<div class="wrapper">
+		<div class="container">
+			<h1>Welcome to Scy</h1>
+			<form class="form">
+				<input type="text" id="account" placeholder="用户名">
+				<div class=account_tip><img id="tips" src="__IMG__/tips.png" alt="accountTest"></div>
+				<input type="password" id="pwd" placeholder="密码">
+				<div class=pwd_tip><img id="tips" src="__IMG__/tips.png" alt="pwdTest"></div>
+				<input type="password" id="repwd" placeholder="确认密码">
+				<div class=repwd_tip><img id="tips" src="__IMG__/tips.png" alt="pwdTest"></div>
+				<button type="button" id="return-button">返回登录</button>
+				<button type="button" id="register-submit">注册</button>
+			</form>
+		</div>
+	</div>
+</block>
+<block name="script">
+    <script src="__JS__/slider.js"></script>
+    <script src="__JS__/login.js"></script>
+    <script>
+    	$('#account').blur(function(){
+	    	if ($(this).val().length == 0) {
+	    		$('.account_tip').find("img").hide();
+	   		} else {
+	    		$('.account_tip').css("right","117px");
+	    		$.post("{:U('Login/checkAccount')}",{account:$(this).val()},function(data){
+	    			if (data == "false") {
+	    				$('#tips').css("left","-40px");
+	    			} else {
+	    				$('#tips').css("left","0px");
+	    			}
+	    		})
+	    		$('.account_tip').find("img").show();
+	    	}
+		})
+    	$("#register-submit").click(function(){
+    		$.post("{:U('Login/registerSubmit')}",{account:$('#account').val(),pwd:$('#pwd').val()},function(data) {
+    			if (data == "true") {
+    				alert("注册成功！");
+    				window.location.href="{:U('Login/open')}";
+    			} else {
+    				alert("注册失败！");
+    			}
+    		})
+		})
+    </script>
+</block>
